@@ -145,3 +145,11 @@ else if (Precio < 300) {
     console.log ("el total con el descuento es de: $" + totalDescuento3)
 }
 
+// Ejercicio 12: Verificar el Año Bisiesto
+
+let año = parseInt(prompt(" ingresa un año:"));
+if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+    console.log("El año " + año + " es bisiesto.");
+} else {
+    console.log("El año " + año + " no es bisiesto.");
+}
