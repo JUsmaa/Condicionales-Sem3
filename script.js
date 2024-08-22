@@ -1,3 +1,5 @@
+
+
 // Ejercicio 1: comparar edad
 let edad = prompt ("ingresa tu edad: ")
 if (edad >= 18) {
@@ -164,6 +166,7 @@ else {
     
 }
 // Ejercicio 14: Determinar Horario del Día
+
 let hora = prompt (" Ingrese la hora en un numero del 0 al 23")
 if (hora >= 6 && hora <= 12) {
     console.log ("Buenos dias")
@@ -173,4 +176,19 @@ else if (hora > 12 &&  hora <= 18) {
 }
 else if (hora > 18 && hora <= 24 || hora >= 0 && hora < 6) {
     console.log ("buenas")
+}
+// Ejercicio 15: Clasificación de Masa Corporal
+
+let peso = parseFloat(prompt("ingresa tu peso en kilogramos:"));
+let altura = parseFloat(prompt("ingresa tu altura en metros:"));
+let imc = peso / (altura * altura);
+console.log("Tu Índice de Masa Corporal (IMC) es: " + imc.toFixed(2));
+if (imc < 18.5) {
+    console.log("Bajo peso");
+} else if (imc >= 18.5 && imc <= 24.9) {
+    console.log(" Peso normal");
+} else if (imc >= 25 && imc <= 29.9) {
+    console.log("Sobrepeso");
+} else {
+    console.log("Obesidad");
 }
