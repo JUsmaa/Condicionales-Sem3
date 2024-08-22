@@ -123,3 +123,25 @@ if (adivinarNum == NumSecreto) {
 else {
     console.log("Lo siento, el numero es incorrecto");
 }
+
+// Ejercicio 11: Cálculo del Precio Final
+
+let Precio = parseInt (prompt ("ingrese el precio base: "))
+let descuento15 = Precio * 15 / 100
+let totalDescuento1 = Precio - descuento15
+
+let descuento10 = Precio * 10 / 100
+let totalDescuento2 = Precio - descuento10
+
+let descuento5 = Precio * 5 / 100
+let totalDescuento3 = Precio - descuento5
+if (Precio > 500) {
+    console.log ("el total con el descuento es de: $" + totalDescuento1)
+}
+else if (Precio >= 300 && Precio <= 500) {
+    console.log ("el total con el descuento es de: $" + totalDescuento2)
+}
+else if (Precio < 300) {
+    console.log ("el total con el descuento es de: $" + totalDescuento3)
+}
+
