@@ -163,3 +163,14 @@ else {
     console.log("Acceso denegado");
     
 }
+// Ejercicio 14: Determinar Horario del Día
+let hora = prompt (" Ingrese la hora en un numero del 0 al 23")
+if (hora >= 6 && hora <= 12) {
+    console.log ("Buenos dias")
+}
+else if (hora > 12 &&  hora <= 18) {
+    console.log ("buenas tardes")
+}
+else if (hora > 18 && hora <= 24 || hora >= 0 && hora < 6) {
+    console.log ("buenas")
+}
